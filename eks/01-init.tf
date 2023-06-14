@@ -16,12 +16,12 @@ variable "control_plane_subnets" {
 
 variable "eks_worker_az_a_subnets" {
   type    = list(any)
-  default = ["10.10.21.0/24", "10.10.22.0/24"]
+  default = ["10.10.32.0/20", "10.10.48.0/20"]
 }
 
 variable "eks_worker_az_b_subnets" {
   type    = list(any)
-  default = ["10.10.23.0/24"]
+  default = []
 }
 
 variable "eks_worker_az_c_subnets" {
